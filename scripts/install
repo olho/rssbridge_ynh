@@ -22,10 +22,10 @@ sudo yunohost app setting $app is_public -v "$is_public"
 final_path=/var/www/$app
 sudo mkdir -p $final_path
 sudo cp -a ../sources/* $final_path
-sudo mkdir -p $final_path/vendor/simplehtmldom/
+sudo mkdir -p $final_path/vendor/simplehtmldom
 sudo apt-get install unzip
 sudo wget http://sourceforge.net/projects/simplehtmldom/files/simple_html_dom.php/download
-sudo cp simple_html_dom.php /var/www/$app/vendor/simplehtmldom/
+sudo cp simple_html_dom.php /var/www/$app/vendor/simplehtmldom
 
 
 # Modify Nginx configuration file and copy it to Nginx conf directory
