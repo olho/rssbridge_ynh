@@ -1,0 +1,48 @@
+{
+    "name": "rssbridge",
+    "id": "rssbridge",
+    "description": {
+        "en": "rssbridge"
+    },
+    "licence": "Code is [Public Domain](UNLICENSE) and Including `PHP Simple HTML DOM Parser` under the [MIT License]",
+    "developer": {
+        "name": "",
+        "email": "",
+        "url": "http://sebsauvage.net"
+    },
+    "multi_instance": "true",
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "ask": {
+                    "en": "Choose a domain for rssbridge"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "ask": {
+                    "en": "Choose a path for rssbridge"
+                },
+                "example": "/rssbridge",
+                "example": "/rssbridge"
+            },
+            {
+                "name": "admin",
+                "ask": {
+                    "en": "Choose an admin user"
+                },
+                "example": "johndoe"
+            },
+            {
+                "name": "is_public",
+                "ask": {
+                    "en": "Is it a public application ?"
+                },
+                "choices": ["Yes", "No"],
+                "default": "Yes"
+            }
+        ]
+    }
+}
