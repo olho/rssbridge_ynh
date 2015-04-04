@@ -27,7 +27,6 @@ sudo apt-get install unzip
 sudo wget http://downloads.sourceforge.net/project/simplehtmldom/simplehtmldom/1.5/simplehtmldom_1_5.zip
 sudo unzip simplehtmldom_1_5.zip
 sudo mv simplehtmldom_1_5.zip /var/www/$app/vendor
-sudo -rm
 
 
 # Modify Nginx configuration file and copy it to Nginx conf directory
