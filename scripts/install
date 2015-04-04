@@ -24,7 +24,7 @@ sudo mkdir -p $final_path
 sudo cp -a ../sources/* $final_path
 sudo mkdir -p $final_path/vendor/simplehtmldom
 sudo apt-get install unzip
-sudo wget http://sourceforge.net/projects/simplehtmldom/files/simple_html_dom.php
+sudo wget wget --no-check-certificate http://sourceforge.net/projects/simplehtmldom/files/simple_html_dom.php
 sudo cp simple_html_dom.php /var/www/$app/vendor/simplehtmldom
 
 
