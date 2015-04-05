@@ -28,7 +28,7 @@ sudo wget -O ../tmp/master.zip "https://github.com/sebsauvage/rss-bridge/archive
 echo "Deploying source files..."
 unzip ../tmp/master.zip -d ../tmp/master
 sudo cp -a ../tmp/master/rss-bridge-master/* $final_path
-sudo rm -f ../tmp/master
+sudo rm -r ../tmp/master
 
 #sudo apt-get install unzip
 #sudo wget 'https://github.com/sebsauvage/rss-bridge/archive/master.zip'
