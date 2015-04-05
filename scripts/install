@@ -23,7 +23,7 @@ final_path=/var/www/$app
 sudo mkdir -p $final_path
 sudo apt-get install unzip
 sudo wget 'https://github.com/sebsauvage/rss-bridge/archive/master.zip'
-unzip rss-bridge-master.zip
+unzip master.zip
 sudo cp -r rss-bridge-master/* $final_path
 #sudo rm master.zip
 sudo mkdir -p $final_path/vendor/simplehtmldom
