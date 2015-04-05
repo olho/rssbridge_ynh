@@ -25,10 +25,9 @@ sudo apt-get install unzip
 sudo wget 'https://github.com/sebsauvage/rss-bridge/archive/master.zip'
 unzip master.zip
 sudo cp -r rss-bridge-master/* $final_path
-#sudo rm master.zip
-sudo mkdir -p $final_path/vendor/simplehtmldom
-sudo wget --no-check-certificate 'http://sourceforge.net/projects/simplehtmldom/files/simple_html_dom.php'
-sudo cp simple_html_dom.php /var/www/$app/vendor/simplehtmldom
+#sudo mkdir -p $final_path/vendor/simplehtmldom
+#sudo wget --no-check-certificate 'http://sourceforge.net/projects/simplehtmldom/files/simple_html_dom.php'
+#sudo cp simple_html_dom.php /var/www/$app/vendor/simplehtmldom
 
 
 # Modify Nginx configuration file and copy it to Nginx conf directory
