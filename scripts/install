@@ -25,8 +25,7 @@ mkdir ../tmp
 sudo wget -O ../tmp/master.zip "https://github.com/sebsauvage/rss-bridge/archive/master.zip"
 echo "Deploying source files..."
 unzip ../tmp/master.zip -d ../tmp/
-sudo cp -r /tmp/rss-bridge-master/* $final_path
-
+sudo cp -a ../tmp/rss-bridge-master/* $final_path
 
 
 #sudo mkdir -p $final_path/vendor/simplehtmldom
