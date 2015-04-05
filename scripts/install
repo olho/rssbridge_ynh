@@ -23,8 +23,8 @@ final_path=/var/www/$app
 sudo mkdir -p $final_path
 sudo apt-get install unzip
 sudo wget --no-check-certificate 'https://github.com/sebsauvage/rss-bridge/archive/master.zip'
-unzip master.zip
-sudo mv ../master/* $final_path
+sudo unzip master.zip 
+sudo cp -r master/* $final_path
 #sudo rm master.zip
 sudo mkdir -p $final_path/vendor/simplehtmldom
 sudo wget --no-check-certificate 'http://sourceforge.net/projects/simplehtmldom/files/simple_html_dom.php'
