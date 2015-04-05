@@ -23,7 +23,6 @@ echo "Downloading rssbridge master version..."
 sudo apt-get install unzip
 mkdir ../tmp
 sudo wget -O ../tmp/master.zip "https://github.com/sebsauvage/rss-bridge/archive/master.zip"
-sudo mkdir -p $final_path
 echo "Deploying source files..."
 unzip ../tmp/master.zip -d ../tmp/master
 sudo cp -r ../tmp/master/rss-bridge-master/* $final_path
