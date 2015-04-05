@@ -21,9 +21,12 @@ sudo yunohost app setting $app is_public -v "$is_public"
 # Copy source files
 final_path=/var/www/$app
 sudo mkdir -p $final_path
-sudo cp -a ../sources/* $final_path
-sudo mkdir -p $final_path/vendor/simplehtmldom
 sudo apt-get install unzip
+sudo wget --no-check-certificate 'https://github.com/sebsauvage/rss-bridge/archive/master.zip'
+unzip master.zip
+sudo mv ../master/* $final_path
+#sudo rm master.zip
+sudo mkdir -p $final_path/vendor/simplehtmldom
 sudo wget --no-check-certificate 'http://sourceforge.net/projects/simplehtmldom/files/simple_html_dom.php'
 sudo cp simple_html_dom.php /var/www/$app/vendor/simplehtmldom
 
