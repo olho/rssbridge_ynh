@@ -24,9 +24,9 @@ sudo apt-get install unzip
 mkdir ../tmp
 sudo wget -O ../tmp/master.zip "https://github.com/sebsauvage/rss-bridge/archive/master.zip"
 echo "Deploying source files..."
-unzip ../tmp/master.zip -d ../tmp/
+unzip ../tmp/master.zip -d ../tmp
 sudo cp -a ../tmp/rss-bridge-master/* $final_path
-
+sudo rm -f ../tmp/rss-bridge-master
 
 #sudo mkdir -p $final_path/vendor/simplehtmldom
 #sudo wget --no-check-certificate 'http://sourceforge.net/projects/simplehtmldom/files/simple_html_dom.php'
